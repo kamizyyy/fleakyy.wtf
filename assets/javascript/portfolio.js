@@ -1,7 +1,5 @@
 'use strict';
 
-const ipgeolocation = 'https://api.ipgeolocation.io/ipgeo?apiKey=1785ed53312f42c7b5ef89f65c3faa1a';
-
 const timeouts = [];
 
 const mobileAndTabletCheck = () => /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
@@ -21,17 +19,9 @@ $(document).ready(() => {
       link: 'http://ogusers.com/fkyy',
     },
     {
-      name: 'twitter',
-      link: 'https://twitter.com/proudhomophobic',
-	},
-	{
-	  name: 'amogus.wtf',
-      link: 'http://amogus.wtf',
+      name: 'steam',
+      link: 'http://steamcommunity.com/id/kickturn',
     },
-	{
-      name: 'polskidev.nl',
-      link: 'http://polskidev.nl',
-	},
   ];
 
   for (let i in links) {
@@ -50,13 +40,7 @@ $(document).ready(() => {
     app.shouldIgnoreVideo = true;
   }
 
-'use strict';(function(){var title=document.title,animSeq=["/","$","\\","|","$"],animIndex=0,titleIndex=0;function doInverseSpinZeroPitch(){var loadTitle=title.substring(0,titleIndex);if(titleIndex>title.length){animIndex=0;titleIndex=0}
-if(animIndex>3){titleIndex++;animIndex=0}
-document.title=loadTitle+animSeq[animIndex];animIndex++}
-window.setInterval(doInverseSpinZeroPitch,50);})();const qS=q=>document.querySelector(q);document.getElementsByTagName('video')[0].volume=0.1;const video=qS('video');const canvas=[qS('.top'),qS('.bot')];const ctx=canvas.map(e=>e.getContext('2d'));let audioCtx,audioAnalyser,audioSource,bufferLength=128,dataArray,width,height,initialized=false;function initAudio(){audioCtx=new(window.AudioContext||window.webkitAudioContext)();audioAnalyser=audioCtx.createAnalyser();audioAnalyser.smoothingTimeConstant=0.5;audioSource=audioCtx.createMediaElementSource(video);audioSource.connect(audioAnalyser);audioAnalyser.connect(audioCtx.destination);audioAnalyser.fftSize=512;bufferLength=audioAnalyser.frequencyBinCount/2;dataArray=new Uint8Array(bufferLength);}
-function draw(){if(initialized){audioAnalyser.getByteFrequencyData(dataArray);}
-ctx.forEach(c=>{c.clearRect(0,0,width,height);});let barWidth=(width/bufferLength)/2;for(let i=0;i<bufferLength;i++){let barHeight=initialized?dataArray[i]:0;ctx.forEach(c=>c.fillStyle='rgb(0, 0, 0)');ctx[0].fillRect(i*2*barWidth,barHeight/2,barWidth,height-barHeight/2);ctx[1].fillRect(width-barWidth-(i*2*barWidth),0,barWidth,height-barHeight/2);}
-requestAnimationFrame(draw);}
+  app.titleChanger([' ', 'f','fl','fle','flea','fleak','fleaky', 'fleakyy', 'fleakyy#', 'fleakyy#5', 'fleakyy#57', 'fleakyy#577', 'fleakyy#5777', 'fleakyy#577', 'fleakyy#57', 'fleakyy#5', 'fleakyy#', 'fleakyy', 'fleaky', 'fleak', 'flea', 'fle', 'fl', 'f']);
   app.iconChanger(['assets/icons/crown.png', 'assets/icons/crown.png']);
 });
 
@@ -91,7 +75,7 @@ $('html').on('contextmenu', (event) => {
   img.src = 'assets/others/clown.png';
   img.width = 24;
   img.height = 24;
-  img.alt = 'fleakyy.wtf';
+  img.alt = 'alf.wtf';
   img.style = `position: absolute; left: ${event.pageX}px; top: ${event.pageY}px; z-index: 10`;
   img.className = `troll ${trollfaceLight}`;
 
@@ -132,34 +116,32 @@ const writeLine = (text, speed, timeout, callback) => {
   }, timeout);
 };
 
-$.getJSON(ipgeolocation, (data) => {
-  writeLine(["> Granting access to <span style='font-size: 14px; color: #ff91a4;'>[fleakyy.wtf]</span>....", `> Access granted! <span style='font-size: 14px; color: #ff91a4;'>[completed]</span>`], 45, () => {
-    if (app.skippedIntro) return;
+writeLine(["> Granting access to <span style='font-size: 14px; color: #ff91a4;'>[fleakyy.wtf]</span>....", `> Access granted! <span style='font-size: 14px; color: #ff91a4;'>[completed]</span>`], 45, () => {
+if (app.skippedIntro) return;
 
-    clearCursor();
+clearCursor();
 
-    const usernames = ['user', 'dude'];
+const usernames = ['user', 'dude'];
 
 
-      if (app.skippedIntro) return;
+  if (app.skippedIntro) return;
 
-      clearCursor();
+  clearCursor();
 
-      writeLine([`<i style='color: #ff91a4'>$ zzz $</i>`], 120, 500, () => {
-        timeouts.push(
-          setTimeout(() => {
-            if (app.skippedIntro) return;
+  writeLine([`<i style='color: #ff91a4'>$ zzz $</i>`], 120, 500, () => {
+    timeouts.push(
+      setTimeout(() => {
+        if (app.skippedIntro) return;
 
-            clearCursor();
+        clearCursor();
 
-            setTimeout(() => {
-              skipIntro();
-            }, 500);
-          }, 1000)
-        );
-      });
+        setTimeout(() => {
+          skipIntro();
+        }, 500);
+      }, 1000)
+    );
   });
-});
+  });
 
 const skipIntro = () => {
   if (app.skippedIntro) return;
