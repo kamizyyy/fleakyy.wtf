@@ -75,7 +75,7 @@ $('html').on('contextmenu', (event) => {
   img.src = 'assets/others/clown.png';
   img.width = 24;
   img.height = 24;
-  img.alt = 'alf.wtf';
+  img.alt = 'fleakyy.wtf';
   img.style = `position: absolute; left: ${event.pageX}px; top: ${event.pageY}px; z-index: 10`;
   img.className = `troll ${trollfaceLight}`;
 
